@@ -122,8 +122,8 @@ const StreamGraph = () => {
         areaGenerator(
           d.map((point) => ({
             ...point,
-            [0]: yScale.domain()[0],
-            [1]: yScale.domain()[0],
+            0: yScale.domain()[0],
+            1: yScale.domain()[0]
           }))
         )
       )

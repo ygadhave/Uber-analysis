@@ -111,7 +111,7 @@ export function ChordDiagram() {
         .duration(1000)
         .style('opacity', 0.7);
     });
-  }, []);
+  }, [dimensions.height, dimensions.width]);
 
   function getLabel(index, genres, popularityRanges) {
     return index < genres.length ? genres[index] : popularityRanges[index - genres.length];
