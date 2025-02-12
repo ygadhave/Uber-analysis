@@ -1,0 +1,310 @@
+/* Full-screen header styling */
+.app-header {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  color: #111;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.author-info {
+  font-family: 'Georgia', serif;
+  color: #555;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.author {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.update-date {
+  color: #888;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Main scrollytelling container */
+.scrollytelling-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Section styling */
+.scrollytelling-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  width: 60%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 30px auto;
+}
+
+/* Chart container and SVG styling */
+.chart-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.chart-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Chord Diagram specific styles */
+.chord-diagram text {
+  font-size: 12px;
+  fill: #555;
+  font-weight: bold;
+}
+
+.chord-diagram .group path {
+  fill-opacity: 0.7;
+  stroke: #ddd;
+}
+
+.chord-diagram .ribbon path {
+  fill-opacity: 0.75;
+  stroke-width: 1px;
+  stroke: #888;
+  transition: fill-opacity 0.3s ease, stroke-width 0.3s ease;
+}
+
+.chord-diagram .ribbon path:hover {
+  fill-opacity: 1;
+  stroke-width: 1.5px;
+}
+
+/* Tooltip styling */
+.tooltip {
+  font-size: 0.9rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+.tooltip.visible {
+  display: block;
+}
+
+/* Enhanced Dropdown */
+select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4a78e3;
+}
+
+/* Chart title and layout */
+.scrollytelling-container h2 {
+  font-family: 'Georgia', serif;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .scrollytelling-container {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .chord-diagram text {
+    font-size: 10px;
+  }
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4a78e3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #357ab8;
+}
+
+/* Styles for Legend */
+.legend-svg {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  overflow: visible;
+}
+.genre-step {
+  padding: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.legend-rect {
+  fill: url(#legend-gradient);
+}
+
+.legend-label {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.legend-tick {
+  font-size: 10px;
+  fill: #333;
+  text-anchor: middle;
+}
+
+/* Additional styling for heat map labels */
+.axis-label {
+  font-size: 16px;
+  font-weight: bold;
+  fill: #333;
+}
+
+/* Additional styling for Waveform Chart's heat map color bar */
+.legend-svg {
+  margin-top: 20px;
+}
+
+.legend-rect {
+  fill: url(#legend-gradient);
+}
+
+.legend-label {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: middle;
+  transform: translateY(10px);
+}
+
+.legend-tick {
+  font-size: 10px;
+  fill: #333;
+  text-anchor: middle;
+  transform: translateY(15px);
+}
+
+/* Smooth transitions for interactive elements */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background: #69b3a2;
+  z-index: 10;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Section Styling */
+.scrollytelling-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-visualization {
+  text-align: center;
+}
+
+.stream-graph {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.stream-graph path {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.stream-graph path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.x-axis path,
+.x-axis line,
+.y-axis path,
+.y-axis line {
+  stroke: #ccc;
+}
+
+.x-axis text,
+.y-axis text {
+  font-size: 12px;
+  fill: #555;
+}
