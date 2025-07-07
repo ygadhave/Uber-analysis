@@ -74,7 +74,7 @@ const App = () => {
         <h1 className="main-title">Evolution of Popular Music Genres</h1>
         <div className="author-info">
           <p>
-            By <span className="author">Yashwant Gadhave, Yash Sawant, and Daniel Aguilera</span>
+            By <span className="author">Yashwant Gadhave</span>
           </p>
           <p className="update-date"> December 6, 2024 </p>
         </div>
