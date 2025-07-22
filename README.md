@@ -116,4 +116,3 @@ A custom-built visualization that compares multiple attributes across genres.
 
 - Yashwant Gadhave
 - Yash Sawant
-- Daniel Aguilera
